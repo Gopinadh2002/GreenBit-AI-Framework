@@ -1,0 +1,28 @@
+# Core ML & Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Transformers & Embeddings
+transformers==4.35.2
+sentence-transformers==2.2.2
+
+# Data Processing & ML
+numpy==1.24.3
+scipy==1.11.4
+pandas==2.0.3
+scikit-learn==1.3.2
+
+# Carbon Tracking
+codecarbon==1.26.3
+
+# File & Image Processing
+pillow==10.1.0
+opencv-python==4.8.1.78
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+requests==2.31.0
+matplotlib==3.8.2
+seaborn==0.13.0
