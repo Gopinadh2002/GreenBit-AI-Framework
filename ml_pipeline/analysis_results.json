@@ -1,0 +1,137 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2026-05-13T09:54:52.934036",
+    "directory": "../data/sample_files",
+    "duration_seconds": 1.382849931716919,
+    "status": "completed"
+  },
+  "file_statistics": {
+    "total_files": 12,
+    "files_analyzed": 12,
+    "unique_files": 7
+  },
+  "clustering_results": {
+    "total_clusters": 8,
+    "duplicate_groups": 3,
+    "files_in_duplicates": 7,
+    "outlier_files": 0
+  },
+  "similarity_analysis": {
+    "similar_pairs_found": 5,
+    "top_similar": [
+      {
+        "file1": "../data/sample_files/project_notes_meeting1.txt",
+        "file2": "../data/sample_files/project_notes_meeting1_backup.txt",
+        "similarity": 1.0,
+        "percentage": 100.0
+      },
+      {
+        "file1": "../data/sample_files/document1_draft_v2.txt",
+        "file2": "../data/sample_files/document1_draft.txt",
+        "similarity": 0.9867842142798419,
+        "percentage": 98.67842142798419
+      },
+      {
+        "file1": "../data/sample_files/document1_final.txt",
+        "file2": "../data/sample_files/document1_draft.txt",
+        "similarity": 0.9601534474240233,
+        "percentage": 96.01534474240233
+      },
+      {
+        "file1": "../data/sample_files/api_documentation.txt",
+        "file2": "../data/sample_files/api_documentation_v2.txt",
+        "similarity": 0.9563915215741664,
+        "percentage": 95.63915215741665
+      },
+      {
+        "file1": "../data/sample_files/document1_final.txt",
+        "file2": "../data/sample_files/document1_draft_v2.txt",
+        "similarity": 0.9539266904024923,
+        "percentage": 95.39266904024923
+      }
+    ]
+  },
+  "carbon_emissions": {
+    "inference_emissions_kg": 7.335069107064218e-06,
+    "inference_emissions_formatted": "7.34 mg",
+    "energy_consumed_kwh": 1.5442250751714144e-05,
+    "tracking_status": "tracked"
+  },
+  "environmental_impact": {
+    "storage_freed_gb": 0.00244140625,
+    "co2_saved_annually_kg": 4.8828125e-08,
+    "net_environmental_gain_kg": -7.286240982064218e-06,
+    "roi_percentage": -99.33431949600892,
+    "trees_equivalent": -3.469638562887723e-07,
+    "miles_driven_equivalent": -0.017728080248331432
+  },
+  "embedding_statistics": {
+    "total_embeddings": 12,
+    "embedding_dimension": 384,
+    "mean_magnitude": 1.0,
+    "max_magnitude": 1.0,
+    "min_magnitude": 0.9999999403953552
+  },
+  "clusters": {
+    "cluster_0": [
+      "../data/sample_files/database_schema.txt"
+    ],
+    "cluster_1": [
+      "../data/sample_files/api_documentation.txt",
+      "../data/sample_files/api_documentation_v2.txt"
+    ],
+    "cluster_2": [
+      "../data/sample_files/requirements_analysis.txt"
+    ],
+    "cluster_3": [
+      "../data/sample_files/user_guide.txt"
+    ],
+    "cluster_4": [
+      "../data/sample_files/project_notes_meeting1.txt",
+      "../data/sample_files/project_notes_meeting1_backup.txt"
+    ],
+    "cluster_5": [
+      "../data/sample_files/document1_final.txt",
+      "../data/sample_files/document1_draft_v2.txt",
+      "../data/sample_files/document1_draft.txt"
+    ],
+    "cluster_6": [
+      "../data/sample_files/machine_learning_basics.txt"
+    ],
+    "cluster_7": [
+      "../data/sample_files/ml_advanced_topics.txt"
+    ]
+  },
+  "all_similar_pairs": [
+    {
+      "file1": "../data/sample_files/project_notes_meeting1.txt",
+      "file2": "../data/sample_files/project_notes_meeting1_backup.txt",
+      "similarity": 1.0,
+      "percentage": 100.0
+    },
+    {
+      "file1": "../data/sample_files/document1_draft_v2.txt",
+      "file2": "../data/sample_files/document1_draft.txt",
+      "similarity": 0.9867842142798419,
+      "percentage": 98.67842142798419
+    },
+    {
+      "file1": "../data/sample_files/document1_final.txt",
+      "file2": "../data/sample_files/document1_draft.txt",
+      "similarity": 0.9601534474240233,
+      "percentage": 96.01534474240233
+    },
+    {
+      "file1": "../data/sample_files/api_documentation.txt",
+      "file2": "../data/sample_files/api_documentation_v2.txt",
+      "similarity": 0.9563915215741664,
+      "percentage": 95.63915215741665
+    },
+    {
+      "file1": "../data/sample_files/document1_final.txt",
+      "file2": "../data/sample_files/document1_draft_v2.txt",
+      "similarity": 0.9539266904024923,
+      "percentage": 95.39266904024923
+    }
+  ]
+}
