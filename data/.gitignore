@@ -1,0 +1,9 @@
+# Keep sample files but ignore large data
+*.zip
+*.tar.gz
+large_datasets/
+real_data/
+cache/
+
+# Keep sample_files folder tracked
+!sample_files/
