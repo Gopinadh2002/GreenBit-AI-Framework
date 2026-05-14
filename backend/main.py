@@ -16,14 +16,20 @@ import shutil
 import tempfile
 import traceback
 
-# Add ml_pipeline to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'ml_pipeline'))
+# Add ml_pipeline to Python path so we can import from it
+ml_pipeline_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'ml_pipeline'))
+if ml_pipeline_path not in sys.path:
+    sys.path.insert(0, ml_pipeline_path)
+
+print(f"📁 ML Pipeline path: {ml_pipeline_path}")
+print(f"✅ Path exists: {os.path.exists(ml_pipeline_path)}")
 
 try:
     from pipeline import GreenBitPipeline
     ML_PIPELINE_AVAILABLE = True
+    print("✅ Successfully imported GreenBitPipeline")
 except ImportError as e:
-    print(f"⚠️ Warning: ML Pipeline not available: {e}")
+    print(f"❌ Error importing pipeline: {e}")
     ML_PIPELINE_AVAILABLE = False
 
 # Initialize FastAPI app
@@ -62,7 +68,7 @@ if ML_PIPELINE_AVAILABLE:
         pipeline = GreenBitPipeline()
         print("✅ ML Pipeline loaded successfully!")
     except Exception as e:
-        print(f"⚠️ Warning: Could not initialize ML Pipeline: {e}")
+        print(f"⚠️ Error initializing ML Pipeline: {e}")
         pipeline = None
         ML_PIPELINE_AVAILABLE = False
 else:
